@@ -448,6 +448,16 @@
                       {{ form | payment_button }}
                     {%- endif -%}
                   </div>
+
+                  <!-- 再入荷リクエスト/アプリ：Back In Stock -->
+                  {% unless product.available %}
+                  <script>
+                  jQuery(document).ready(function ($) {
+                    $(".shopify-payment-button").css('display', 'none');
+                  });
+                  </script>
+                  {% endunless %}
+
                 {%- endform -%}
               </product-form>
 

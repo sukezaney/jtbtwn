@@ -85,18 +85,11 @@
           "settings": {
             "collection": ""
           }
-        },
-        "166297599547afde74-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "166297599547afde74-0",
-        "166297599547afde74-1",
-        "166297599547afde74-2"
+        "166297599547afde74-1"
       ],
       "settings": {
         "title": "おすすめカテゴリー",

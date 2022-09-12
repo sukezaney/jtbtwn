@@ -57,7 +57,7 @@
     "166297576528331661": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "ブログ一覧",
         "heading_size": "h1",
         "blog": "ニュース",
         "post_limit": 3,

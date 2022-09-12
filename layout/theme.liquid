@@ -8,6 +8,9 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
+		<!-- Swiper --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+		<!-- Swiper --><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -31,6 +34,8 @@
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
+
+    <!-- 追加CSS --><link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -212,6 +217,9 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+    <!-- fontawesome --><link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <!-- jQuery --><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   </head>
 
   <body class="gradient">
@@ -226,7 +234,18 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
+      {%- if template == 'index' -%}
+      <div class="main-header">
+      {% section 'slide-area' %}
+      </div>
+      {%- endif -%}
+      <div class="main-inner main-inner-page{%- if template == 'index' -%}-top{% else %}-under{%- endif -%}">
+        <div class="main-col{% if template == 'index' %} main-col-top{% endif %}">
+          <div class="main-col__Inner">
+            {{ content_for_layout }}
+          </div>
+        </div><!-- main-col -->
+      </div><!-- main-inner -->
     </main>
 
     {% section 'footer' %}

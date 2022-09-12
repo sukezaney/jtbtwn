@@ -1,0 +1,40 @@
+$main-color: #98de9f;
+$sub-color: #98de9f;
+$accent-color: #98de9f;
+$text-color: #595656;
+
+$wide: 1141px;
+$normal: 1140px;
+$sp: 640px; 
+@mixin wide {
+  @media (min-width: ($wide)) {
+    @content;
+  }
+}
+@mixin normal {
+  @media (max-width: ($normal)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+$text-color: #121212;
+$bg-color: #c5e6c8;
+
+/* Swiper */
+.main-header{
+  .swiper-container{
+    padding: 60px 0;
+    .swiper-wrapper{
+      .swiper-slide{
+        img{
+          box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+<!-- Slider main container 20220725 -->
+<div class="swiper-container mainslide">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {%- for block in section.blocks -%}
+    <div class="swiper-slide">
+      {%- if block.settings.button_link != blank -%}<a href="{{ block.settings.button_link }}">{%- endif -%}
+        <img src="{{ block.settings.image | img_url: "master" }}" />
+      {%- if block.settings.button_link != blank -%}</a>{%- endif -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<script>
+	const mySwiper = new Swiper('.mainslide', {
+		loop: false,
+		effect: 'slide',
+		centeredSlides: true,
+		slidesPerView: 3, // コンテナ内に表示させるスライド数（CSSでサイズ指定する場合は 'auto'）
+    spaceBetween: 50, // スライド間の余白（px）
+    centeredSlides: true, // アクティブなスライドを中央に配置する
+    loop: true, // 無限ループさせる
+    loopAdditionalSlides: 1, // 無限ループさせる場合に複製するスライド数
+		speed: 1000,
+		autoplay: {
+			delay: 9000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // クリックによるスライド切り替えを有効にする
+			type: 'bullets',
+		},
+    navigation: {
+    nextEl: '.swiper-button-next', // 「次へ」ボタン要素のクラス
+    prevEl: '.swiper-button-prev', // 「前へ」ボタン要素のクラス
+    },
+    scrollbar: {
+    el: '.swiper-scrollbar', // スクロールバー要素のクラス
+    },
+    breakpoints: { // ブレークポイント
+    781: { // 画面幅600px以上で適用
+      slidesPerView: 1,
+    },
+  },
+	})
+</script>
+
+{% style %}
+.swiper-container {
+  text-align: center;
+}
+.swiper-slide img{
+  width: 100%;
+}
+{% endstyle %}
+
+{% schema %}
+{
+  "presets": [
+    {
+      "name": "スライドショー(Swiper) p",
+      "category": "画像"
+    }
+  ],
+  "name": "スライドショー(Swiper)",
+  "class": "slider index-section--flush index-section--slideshow-swiper",
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "画像スライド",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "画像"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "ボタンのリンク"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

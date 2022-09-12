@@ -448,6 +448,14 @@
                       {{ form | payment_button }}
                     {%- endif -%}
                   </div>
+
+                  <!-- 再入荷リクエスト/アプリ：Back In Stock -->
+                  {% unless product.available %}
+                  <a href="#" class="BIS_trigger" data-product-data="{{ product | json | escape }}">
+                  Email when available
+                  </a>
+                  {% endunless %}
+
                 {%- endform -%}
               </product-form>
 

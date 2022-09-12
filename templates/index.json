@@ -6,6 +6,7 @@
         "16629740199a819dfe-0": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide01.png",
             "heading": "Sample Image",
             "heading_size": "h1",
             "subheading": "ここにテキストを入れられます",
@@ -23,6 +24,7 @@
         "16629740199a819dfe-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide02.png",
             "heading": "Sample Image",
             "heading_size": "h1",
             "subheading": "ここにテキストを入れられます",

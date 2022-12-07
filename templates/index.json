@@ -6,7 +6,7 @@
         "16629740199a819dfe-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide01.png",
+            "image": "shopify:\/\/shop_images\/9c465cbee64ef2cfa58ea8722919ad43.jpg",
             "heading": "Sample Image",
             "heading_size": "h1",
             "subheading": "ここにテキストを入れられます",
@@ -139,7 +139,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p><\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",

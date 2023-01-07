@@ -24,9 +24,9 @@
 }
 
 .confirm-checked {
-  display: none;
+  display: block;
 }
 
 .confirm-unchecked {
-  display: block;
+  display: none;
 }/*# sourceMappingURL=custom.original.css.map */

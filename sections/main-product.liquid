@@ -411,6 +411,23 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
+          <div class="buy-button-confirm">
+            <input type="checkbox" id="buybuttonconfirm">
+            <label for="buybuttonconfirm">ご案内・注意事項をご確認ください</label>
+          </div>
+          <div id="buy-button">
+            <script>
+              window.addEventListener('DOMContentLoaded',function(){
+                const checkboxSingle = document.getElementById('buybuttonconfirm');
+                checkboxSingle.addEventListener('change',function(){
+                  if(this.checked) {
+                    document.getElementById("buy-button").classList.add("confirm-checked");
+                  } else{
+                    document.getElementById("buy-button").classList.add("confirm-unchecked");
+                  }
+                });
+              });
+            </script>
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -483,8 +500,8 @@
                 </template>
               </pickup-availability>
             </div>
-
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+          </div><!-- #buy-button -->
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid

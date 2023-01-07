@@ -413,7 +413,17 @@
           {%- when 'buy_buttons' -%}
           <div class="buy-button-confirm">
             <input type="checkbox" id="buybuttonconfirm">
-            <label for="buybuttonconfirm">ご案内・注意事項をご確認ください</label>
+            <label for="buybuttonconfirm">ご案内・注意事項をご確認しました</label>
+          </div>
+          <div id="buy-button-recommend" class="recommend-on confirm-unchecked product-form__buttons">
+            <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">
+              <span>ご案内・注意事項をご確認して下さい</span>
+              <div class="loading-overlay__spinner hidden">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </button>
           </div>
           <div id="buy-button">
             <script>
@@ -422,8 +432,14 @@
                 checkboxSingle.addEventListener('change',function(){
                   if(this.checked) {
                     document.getElementById("buy-button").classList.add("confirm-checked");
+                    document.getElementById("buy-button").classList.remove("confirm-unchecked");
+                    document.getElementById("buy-button-recommend").classList.add("recommend-off");
+                    document.getElementById("buy-button-recommend").classList.remove("recommend-on");
                   } else{
                     document.getElementById("buy-button").classList.add("confirm-unchecked");
+                    document.getElementById("buy-button").classList.remove("confirm-checked");
+                    document.getElementById("buy-button-recommend").classList.add("recommend-on");
+                    document.getElementById("buy-button-recommend").classList.remove("recommend-off");
                   }
                 });
               });

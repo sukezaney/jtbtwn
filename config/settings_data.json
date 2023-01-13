@@ -127,8 +127,8 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "リンク",
-              "menu": "footer"
+              "heading": "利用規約",
+              "menu": "link-list"
             }
           },
           "footer-1": {

@@ -500,12 +500,14 @@
                   <script>
                   jQuery(document).ready(function ($) {
                     $(".shopify-payment-button").css('display', 'none');
-                    $("#BIS_trigger").text("再入荷");
                   });
                   </script>
                   {% endunless %}
 
                 {%- endform -%}
+                jQuery(document).ready(function ($) {
+                  $("#BIS_trigger").text("再入荷");
+                });
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}

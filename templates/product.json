@@ -42,7 +42,12 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "text_confirmation01_ja": "ご案内・注意事項を確認"
+            "text_confirmation01_ja": "ご案内・注意事項を確認しました",
+            "text_confirmation01_tw": "我已确认使用说明和注意事项",
+            "text_confirmation02_ja": "ご案内・注意事項をご確認ください",
+            "text_confirmation02_tw": "请查看信息和注意事项",
+            "text_confirmation03_ja": "再入荷リクエスト",
+            "text_confirmation03_tw": "补货要求"
           }
         },
         "description": {

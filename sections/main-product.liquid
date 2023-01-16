@@ -415,9 +415,9 @@
             <input type="checkbox" id="buybuttonconfirm">
             <label for="buybuttonconfirm">
             {% if request.path contains '/zh/' %}
-            {{ block.settings.text_confirmation01_ja }}
-            {% else %}
             {{ block.settings.text_confirmation01_tw }}
+            {% else %}
+            {{ block.settings.text_confirmation01_ja }}
             {% endif %}
             </label>
           </div>
@@ -425,9 +425,9 @@
             <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">
               <span>
               {% if request.path contains '/zh/' %}
-              {{ block.settings.text_confirmation02_ja }}
-              {% else %}
               {{ block.settings.text_confirmation02_tw }}
+              {% else %}
+              {{ block.settings.text_confirmation02_ja }}
               {% endif %}
               </span>
               <div class="loading-overlay__spinner hidden">
@@ -500,7 +500,7 @@
                   <script>
                   jQuery(document).ready(function ($) {
                     $(".shopify-payment-button").css('display', 'none');
-                    $("#BIS_trigger").text("{% if request.path contains '/zh/' %}{{ block.settings.text_confirmation03_ja }}{% else %}{{ block.settings.text_confirmation03_tw }}{% endif %}");
+                    $("#BIS_trigger").text("再入荷");
                   });
                   </script>
                   {% endunless %}

@@ -41,7 +41,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "text_confirmation01_ja": "ご案内・注意事項を確認"
           }
         },
         "description": {

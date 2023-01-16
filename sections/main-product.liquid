@@ -434,6 +434,13 @@
             {{ block.settings.text_confirmation01_ja }}
             {% endif %}
             </label>
+            <a href="#footerarea">
+            {% if request.path contains '/zh/' %}
+            {{ block.settings.text_confirmation04_tw }}
+            {% else %}
+            {{ block.settings.text_confirmation04_ja }}
+            {% endif %}
+            </a>
           </div>
           <div id="buy-button-recommend" class="recommend-on product-form__buttons">
             <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">
@@ -816,6 +823,18 @@
           "id": "text_confirmation01_tw",
           "label": "台湾語翻訳1：ご案内・注意事項を確認しました",
           "default": "我已确认使用说明和注意事项"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation04_ja",
+          "label": "日本語翻訳1：ご案内・注意事項はこちら",
+          "default": "ご案内・注意事項を確認しました"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation04_tw",
+          "label": "台湾語翻訳1：ご案内・注意事項はこちら",
+          "default": "单击此处获取信息和注释"
         },
         {
           "type": "text",

@@ -413,7 +413,13 @@
           {%- when 'buy_buttons' -%}
           <div class="buy-button-confirm">
             <input type="checkbox" id="buybuttonconfirm">
-            <label for="buybuttonconfirm">ご案内・注意事項を確認しました</label>
+            <label for="buybuttonconfirm">
+            {% if request.path contains '/zh/' %}
+            {{ section.settings.text_confirmation01_ja }}tw
+            {% else %}
+            {{ section.settings.text_confirmation01_ja }}ja
+            {% endif %}
+            </label>
           </div>
           <div id="buy-button-recommend" class="recommend-on product-form__buttons">
             <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">

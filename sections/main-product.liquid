@@ -22,6 +22,10 @@
       color: #fff;
       height: 5rem;
     }
+    .forFooterarea{
+      display: block;
+      font-size: 0.8em;
+    }
 
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -434,7 +438,7 @@
             {{ block.settings.text_confirmation01_ja }}
             {% endif %}
             </label>
-            <a href="#footerarea">
+            <a class="forFooterarea" href="#footerarea">
             {% if request.path contains '/zh/' %}
             {{ block.settings.text_confirmation04_tw }}
             {% else %}

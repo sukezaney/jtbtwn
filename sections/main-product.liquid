@@ -505,9 +505,11 @@
                   {% endunless %}
 
                 {%- endform -%}
+                <script>
                 jQuery(document).ready(function ($) {
                   $("#BIS_trigger").text("再入荷");
                 });
+                </script>
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}

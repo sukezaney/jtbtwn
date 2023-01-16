@@ -415,15 +415,21 @@
             <input type="checkbox" id="buybuttonconfirm">
             <label for="buybuttonconfirm">
             {% if request.path contains '/zh/' %}
-            {{ block.settings.text_confirmation01_ja }}tw
+            {{ block.settings.text_confirmation01_ja }}
             {% else %}
-            {{ block.settings.text_confirmation01_ja }}ja
+            {{ block.settings.text_confirmation01_tw }}
             {% endif %}
             </label>
           </div>
           <div id="buy-button-recommend" class="recommend-on product-form__buttons">
             <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">
-              <span>ご案内・注意事項をご確認下さい</span>
+              <span>
+              {% if request.path contains '/zh/' %}
+              {{ block.settings.text_confirmation02_ja }}
+              {% else %}
+              {{ block.settings.text_confirmation02_tw }}
+              {% endif %}
+              </span>
               <div class="loading-overlay__spinner hidden">
                 <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                   <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
@@ -494,6 +500,7 @@
                   <script>
                   jQuery(document).ready(function ($) {
                     $(".shopify-payment-button").css('display', 'none');
+                    $("#BIS_trigger").text("{% if request.path contains '/zh/' %}{{ block.settings.text_confirmation03_ja }}{% else %}{{ block.settings.text_confirmation03_tw }}{% endif %}");
                   });
                   </script>
                   {% endunless %}
@@ -783,6 +790,36 @@
           "id": "text_confirmation01_ja",
           "label": "日本語翻訳1：ご案内・注意事項を確認しました",
           "default": "ご案内・注意事項を確認しました"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation01_tw",
+          "label": "台湾語翻訳1：ご案内・注意事項を確認しました",
+          "default": "我已确认使用说明和注意事项"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation02_ja",
+          "label": "日本語翻訳1：ご案内・注意事項をご確認ください",
+          "default": "ご案内・注意事項をご確認ください"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation02_tw",
+          "label": "台湾語翻訳1：ご案内・注意事項をご確認ください",
+          "default": "请查看信息和注意事项"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation03_ja",
+          "label": "日本語翻訳1：再入荷リクエスト",
+          "default": "再入荷リクエスト"
+        },
+        {
+          "type": "text",
+          "id": "text_confirmation03_tw",
+          "label": "台湾語翻訳1：再入荷リクエスト",
+          "default": "补货要求"
         }
       ]
     },

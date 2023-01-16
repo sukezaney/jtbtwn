@@ -12,6 +12,16 @@
     #BIS_trigger{
       display: none;
     }
+    .backinstock_ctm{
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      height: 5rem;
+    }
 
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -501,7 +511,7 @@
 
                   <!-- 再入荷リクエスト/アプリ：Back In Stock -->
                   {% unless product.available %}
-                  <a href="#" class="BIS_trigger" data-product-data="{{ product | json | escape }}">
+                  <a href="#" class="BIS_trigger backinstock_ctm" data-product-data="{{ product | json | escape }}">
                   {% if request.path contains '/zh/' %}
                   {{ block.settings.text_confirmation03_tw }}
                   {% else %}

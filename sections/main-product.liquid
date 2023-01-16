@@ -415,9 +415,9 @@
             <input type="checkbox" id="buybuttonconfirm">
             <label for="buybuttonconfirm">
             {% if request.path contains '/zh/' %}
-            {{ section.settings.text_confirmation01_ja }}tw
+            {{ block.settings.text_confirmation01_ja }}tw
             {% else %}
-            {{ section.settings.text_confirmation01_ja }}ja
+            {{ block.settings.text_confirmation01_ja }}ja
             {% endif %}
             </label>
           </div>

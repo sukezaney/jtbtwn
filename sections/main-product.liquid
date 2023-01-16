@@ -413,7 +413,14 @@
           {%- when 'buy_buttons' -%}
           <div class="buy-button-confirm">
             <input type="checkbox" id="buybuttonconfirm">
-            <label for="buybuttonconfirm">ご案内・注意事項を確認しました</label>
+            <label for="buybuttonconfirm">
+            <!-- ご案内・注意事項を確認しました -->
+            {% if request.path contains '/policies' %}
+            {{ section.settings.text_confirmation01_ja }}
+            {% else %}
+            {{ section.settings.text_confirmation01_ja }}
+            {% endif %}
+            </label>
           </div>
           <div id="buy-button-recommend" class="recommend-on product-form__buttons">
             <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary" disabled="">
@@ -1152,6 +1159,34 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ]
+}
+{
+  "name": {
+    "ja": "翻訳設定"
+  },
+  "class": "text-local",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_confirmation01_ja",
+      "label": {
+        "ja": "ご案内・注意事項を確認しました"
+      },
+      "default": {
+        "ja": "ご案内・注意事項を確認しました"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "ja": "翻訳設定"
+      },
+      "category": {
+        "ja": "翻訳設定"
+      }
     }
   ]
 }

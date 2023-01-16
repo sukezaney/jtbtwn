@@ -9,6 +9,10 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
+    #BIS_trigger{
+      display: none;
+    }
+
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -498,8 +502,12 @@
                   <!-- 再入荷リクエスト/アプリ：Back In Stock -->
                   {% unless product.available %}
                   <a href="#" class="BIS_trigger" data-product-data="{{ product | json | escape }}">
-    Email when available
-  </a>
+                  {% if request.path contains '/zh/' %}
+                  {{ block.settings.text_confirmation03_tw }}
+                  {% else %}
+                  {{ block.settings.text_confirmation03_ja }}
+                  {% endif %}
+                  </a>
                   <script>
                   jQuery(document).ready(function ($) {
                     $(".shopify-payment-button").css('display', 'none');

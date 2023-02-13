@@ -54,7 +54,7 @@
             "gift_checkbox_text": "ギフト配送を希望する",
             "e_gift_radio_text": "住所を知らない相手にeギフトで贈る",
             "giver_name_label_text": "贈り主の名前を入力してください",
-            "header_text": "お届け方法",
+            "header_text": "お届け",
             "e_gift_description_text": "相手の住所を知らなくても、ギフトを贈れるサービスです。 購入後に発行される、受け取り用のURLをLINEやSNSなどを使ってお相手にお送りください。",
             "e_gift_description_color": "#000000",
             "e_gift_description_url": "",

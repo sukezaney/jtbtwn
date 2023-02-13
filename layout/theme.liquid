@@ -283,7 +283,20 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
+    
+    <script>
+      function NavigatorGetLanguage(){
+        var navigator_obj = window.navigator;
+        if(navigator_obj.language !== undefined)    return navigator_obj.language;
+        if(navigator_obj.browserLanguage !== undefined) return navigator_obj.browserLanguage;
+        if(navigator_obj.userLanguage !== undefined)    return navigator_obj.userLanguage;
+        return "ja";
+      }
 
+var language = NavigatorGetLanguage();
+document.getElementsByTagName('html')[0].className+=language;
+    </script>    
+    
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}

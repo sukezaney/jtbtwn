@@ -293,7 +293,7 @@
         return "ja";
       }
       var language = NavigatorGetLanguage();
-      document.getElementsByTagName('html')[0].className+=language;
+      document.getElementsByTagName('html')[0].classList.add+=language;
     </script>   
     
     {%- if settings.predictive_search_enabled -%}

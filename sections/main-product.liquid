@@ -10,19 +10,17 @@
 
   {%- style -%}
 
-    .chakra-text{
+    .chakra-container .chakra-text{
       font-size: 0;
     }
-    .ja .chakra-text::after{
-      content: "指定の住所に贈る";
-    }
-    .zh-TW .chakra-text::after{
-      content: "發送到指定地址";
-    }
-    .chakra-text::after{
+    .chakra-container .chakra-text::after{
       font-size: 14px;
       content: "指定の住所に贈る";
     }
+    .zh-TW .chakra-container .chakra-text::after{
+      content: "發送到指定地址";
+    }
+
     
 
     

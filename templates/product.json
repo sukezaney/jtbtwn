@@ -58,7 +58,7 @@
             "e_gift_description_text": "相手の住所を知らなくても、ギフトを贈れるサービスです。 購入後に発行される、受け取り用のURLをLINEやSNSなどを使ってお相手にお送りください。",
             "e_gift_description_color": "#000000",
             "e_gift_description_url": "",
-            "original_color_enable": "true"
+            "original_color_enable": "false"
           }
         },
         "quantity_selector": {

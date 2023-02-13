@@ -287,7 +287,7 @@
     
     <script>
       var lang = document.getElementsByTagName("html")[0].lang;
-      document.getElementById("langstyle").classList.add("item");
+      document.getElementById("langstyle").classList.add(lang);
     </script>
     
     {%- if settings.predictive_search_enabled -%}

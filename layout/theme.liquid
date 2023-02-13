@@ -294,7 +294,7 @@
         return "ja";
       }
       var language = NavigatorGetLanguage();
-      document.getElementById('langstyle')[0].className+=language;
+      document.getElementById('langstyle').className+=language;
     </script>   
     
     {%- if settings.predictive_search_enabled -%}

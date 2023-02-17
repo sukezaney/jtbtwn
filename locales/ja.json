@@ -426,9 +426,6 @@
   },
   "shopify": {
     "checkout": {
-      "contact": {
-        "optional_company_label": "会社　※統一編號發票発行ご希望の場合は、ご記入ください。（任意）"
-      },
       "payment": {
         "billing_address_title": "請求先住所（統一編號發票発行ご希望の場合は、下記にてご記入ください）",
         "different_billing_address_label": "違う請求先住所を使う（下記の「会社」のところに統一編號をご記入ください）"

@@ -430,7 +430,8 @@
         "optional_company_label": "公司"
       },
       "payment": {
-        "billing_address_title": "帳單地址（若需開立統一編號發票，請在下方填寫）"
+        "billing_address_title": "帳單地址（若需開立統一編號發票，請在下方填寫）",
+        "different_billing_address_label": "使用其他帳單地址(請在下方公司欄位輸入統一編號)"
       }
     }
   }

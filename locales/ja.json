@@ -428,6 +428,9 @@
     "checkout": {
       "contact": {
         "optional_company_label": "会社　※統一編號發票発行ご希望の場合は、ご記入ください。（任意）"
+      },
+      "payment": {
+        "billing_address_title": "請求先住所（統一編號發票）"
       }
     }
   }

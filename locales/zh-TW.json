@@ -427,7 +427,7 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "optional_company_label": "公司　※若需開立統一編號發票，請在此欄填寫。 (選填)"
+        "optional_company_label": "公司"
       }
     }
   }

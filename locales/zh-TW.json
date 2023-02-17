@@ -428,6 +428,9 @@
     "checkout": {
       "contact": {
         "optional_company_label": "公司"
+      },
+      "payment": {
+        "billing_address_title": "帳單地址（若需開立統一編號發票，請在下方填寫）"
       }
     }
   }

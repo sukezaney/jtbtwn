@@ -47,7 +47,7 @@
             "secondary_button_color": "#ffffff",
             "secondary_button_text_color": "#e22120",
             "button_radius": 5,
-            "gift_setting_button_text": "ギフト設定",
+            "gift_setting_button_text": "ギフト設",
             "gift_setting_cancel_button_text": "ギフト設定をキャンセルする",
             "icon_show": "true",
             "gift_radio_text": "指定の住所に贈る",

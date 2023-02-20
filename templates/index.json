@@ -110,20 +110,13 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>商品一覧<\/p>",
+            "heading": "<p>オススメ商品<\/p>",
             "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>ここに説明文を入れられます<\/p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
         "desktop_content_position": "center",

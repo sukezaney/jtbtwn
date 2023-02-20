@@ -131,13 +131,6 @@
               "menu": "link-list"
             }
           },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "カテゴリー",
-              "menu": "footer"
-            }
-          },
           "footer-2": {
             "type": "text",
             "settings": {
@@ -148,7 +141,6 @@
         },
         "block_order": [
           "footer-0",
-          "footer-1",
           "footer-2"
         ],
         "settings": {

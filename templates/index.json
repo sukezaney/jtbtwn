@@ -139,10 +139,10 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "<p><\/p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "オススメ",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,

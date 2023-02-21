@@ -85,15 +85,6 @@
           "settings": {
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "{{ block.settings.page.title }}",
-            "icon": "return",
-            "content": "",
-            "page": "about-returns-and-exchanges"
-          }
-        },
         "caf8a4e1-8751-4305-bbe8-362b236b260d": {
           "type": "collapsible_tab",
           "settings": {
@@ -101,6 +92,15 @@
             "icon": "check_mark",
             "content": "",
             "page": "ご案内-注意事項"
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ block.settings.page.title }}",
+            "icon": "return",
+            "content": "",
+            "page": "about-returns-and-exchanges"
           }
         },
         "share": {
@@ -120,8 +120,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-1",
         "caf8a4e1-8751-4305-bbe8-362b236b260d",
+        "collapsible-row-1",
         "share"
       ],
       "settings": {

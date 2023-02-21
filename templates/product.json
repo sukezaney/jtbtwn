@@ -88,7 +88,7 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "返品・交換について",
+            "heading": "{{ block.settings.page.title }}",
             "icon": "truck",
             "content": "",
             "page": "about-returns-and-exchanges"

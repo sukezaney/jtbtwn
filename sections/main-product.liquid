@@ -706,14 +706,14 @@
                 </button>
               </quantity-input>
             </div>
+            <A Name="testhere">1</A> 
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
           {%- when 'share' -%}
-            <A Name="testhere">1</A> 
-            <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
+              <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
                 {{ block.settings.share_label | escape }}

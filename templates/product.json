@@ -99,8 +99,8 @@
           "settings": {
             "heading": "{{ block.settings.page.title }}",
             "icon": "ruler",
-            "content": "<p>5kg（3～4玉入）<\/p>",
-            "page": ""
+            "content": "",
+            "page": "金鑽鳳梨"
           }
         },
         "collapsible-row-3": {

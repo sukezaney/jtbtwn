@@ -989,7 +989,8 @@
       </div>
     </div>
   </div>
-
+<A Name="testhere">1</A> 
+            
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
       <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
@@ -1018,7 +1019,6 @@
       </div>
     </div>
   </product-modal>
-<A Name="testhere"></A> 
                       
   {% assign popups = section.blocks | where: "type", "popup" %}
   {%- for block in popups -%}

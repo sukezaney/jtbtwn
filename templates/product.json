@@ -106,10 +106,10 @@
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "保存方法",
+            "heading": "{{ block.settings.page.title }}",
             "icon": "heart",
-            "content": "<p><strong>パインアップルの食べ頃<\/strong><br\/>パインアップルは実の表面が黄色に変わっているものが食べ頃です。<br\/>お手元に届いてから、直射日光の当たらない場所で2～3日追熟させてください。<br\/><strong>パインアップルの保存方法<\/strong><br\/>冷蔵庫でまるごと保存する場合、新聞紙に包んでから入れてください。<br\/>切ったものはラップで包めば冷蔵庫で2～3日保存できます。<\/p>",
-            "page": ""
+            "content": "",
+            "page": "パインアップルの保存方法"
           }
         },
         "share": {

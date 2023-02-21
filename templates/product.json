@@ -97,6 +97,7 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
+            "heading": "サイズ",
             "icon": "ruler",
             "content": "<p>5kg（3～4玉入）<\/p>",
             "page": ""

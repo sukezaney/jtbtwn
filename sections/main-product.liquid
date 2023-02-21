@@ -680,9 +680,9 @@
                   {{ block.settings.page.content }}
                 </div>
               </details>
+            <A Name="testhere">1</A>
             </div>
-             <A Name="testhere">1</A>
-          {%- when 'quantity_selector' -%}
+             {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}

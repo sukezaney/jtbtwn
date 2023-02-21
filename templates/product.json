@@ -89,33 +89,24 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "{{ block.settings.page.title }}",
-            "icon": "truck",
+            "icon": "return",
             "content": "",
             "page": "about-returns-and-exchanges"
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "{{ block.settings.page.title }}",
-            "icon": "ruler",
-            "content": "",
-            "page": "金鑽鳳梨"
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "{{ block.settings.page.title }}",
-            "icon": "heart",
-            "content": "",
-            "page": "パインアップルの保存方法"
           }
         },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "33672935-c522-403c-98f8-deee06eb3149": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
           }
         }
       },
@@ -130,9 +121,8 @@
         "buy_buttons",
         "description",
         "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "share",
+        "33672935-c522-403c-98f8-deee06eb3149"
       ],
       "settings": {
         "enable_sticky_info": true,

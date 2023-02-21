@@ -679,7 +679,6 @@
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
                 </div>
-            <A Name="testhere"></A> 
               </details>
             </div>
           {%- when 'quantity_selector' -%}
@@ -687,7 +686,8 @@
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
-
+<A Name="testhere"></A> 
+            
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>

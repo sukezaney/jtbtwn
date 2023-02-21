@@ -722,7 +722,6 @@
                   {% render 'icon-share' %}
                   {{ block.settings.share_label | escape }}
                 </summary>
-             <A Name="testhere">1</A> 
                 <div id="Product-share-{{ section.id }}" class="share-button__fallback motion-reduce">
                   <div class="field">
                     <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
@@ -748,6 +747,7 @@
                 </div>
               </details>
             </share-button>
+            <A Name="testhere">1</A> 
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}

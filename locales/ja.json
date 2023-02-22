@@ -427,7 +427,7 @@
   "shopify": {
     "checkout": {
       "payment": {
-        "billing_address_title": "請求先住所（統一編號發票発行ご希望の場合は、下記「会社」のところにご記入ください）",
+        "billing_address_title": "ご注文者情報",
         "different_billing_address_label": "違う請求先住所を使う（下記の「会社」のところに統一編號をご記入ください）"
       }
     }

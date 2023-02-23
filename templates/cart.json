@@ -15,11 +15,6 @@
           "settings": {
           }
         },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-          }
-        },
         "b4ed299d-5574-4bc0-bca9-1bca2df49244": {
           "type": "shopify:\/\/apps\/all-in-gift-e\/blocks\/app-block-cart\/14c78036-27a0-4098-a9e3-c3f1525dedff",
           "settings": {
@@ -34,12 +29,12 @@
             "secondary_button_color": "#FFFFFF",
             "secondary_button_text_color": "#5570E9",
             "button_radius": 5,
-            "gift_setting_button_text": "配送先入力",
-            "gift_setting_cancel_button_text": "リセットする",
+            "gift_setting_button_text": "ギフト設定",
+            "gift_setting_cancel_button_text": "ギフト設定をキャンセルする",
             "multiship_gift_setting_button_text": "配送先を追加する",
             "icon_show": "true",
-            "gift_radio_text": "指定の住所に送る",
-            "gift_checkbox_text": "配送先を入力する",
+            "gift_radio_text": "指定の住所に贈る",
+            "gift_checkbox_text": "ギフト配送を希望する",
             "e_gift_radio_text": "住所を知らない相手にeギフトで贈る",
             "giver_name_label_text": "贈り主の名前を入力してください",
             "header_text": "お届け方法",
@@ -48,12 +43,17 @@
             "e_gift_description_url": "",
             "original_color_enable": "true"
           }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons",
-        "b4ed299d-5574-4bc0-bca9-1bca2df49244"
+        "b4ed299d-5574-4bc0-bca9-1bca2df49244",
+        "buttons"
       ],
       "settings": {
       }

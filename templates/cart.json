@@ -15,35 +15,6 @@
           "settings": {
           }
         },
-        "b4ed299d-5574-4bc0-bca9-1bca2df49244": {
-          "type": "shopify:\/\/apps\/all-in-gift-e\/blocks\/app-block-cart\/14c78036-27a0-4098-a9e3-c3f1525dedff",
-          "settings": {
-            "font_color": "#000000",
-            "secondary_font_color": "#e22120",
-            "font_size": 14,
-            "checkout_button_text": "購入手続きへ",
-            "checkout_button_text_color": "#ffffff",
-            "checkout_button_color": "#000000",
-            "primary_button_color": "#e22120",
-            "primary_button_text_color": "#ffffff",
-            "secondary_button_color": "#ffffff",
-            "secondary_button_text_color": "#e22120",
-            "button_radius": 5,
-            "gift_setting_button_text": "ギフト設定",
-            "gift_setting_cancel_button_text": "リセットする",
-            "multiship_gift_setting_button_text": "配送先を追加する",
-            "icon_show": "true",
-            "gift_radio_text": "指定の住所に送る",
-            "gift_checkbox_text": "配送先を入力する",
-            "e_gift_radio_text": "住所を知らない相手にeギフトで贈る",
-            "giver_name_label_text": "贈り主の名前を入力してください",
-            "header_text": "配送方法",
-            "e_gift_description_text": "相手の住所を知らなくても、ギフトを贈れるサービスです。 購入後に発行される、受け取り用のURLをLINEやSNSなどを使ってお相手にお送りください。",
-            "e_gift_description_color": "#000000",
-            "e_gift_description_url": "",
-            "original_color_enable": "false"
-          }
-        },
         "buttons": {
           "type": "buttons",
           "settings": {
@@ -52,7 +23,6 @@
       },
       "block_order": [
         "subtotal",
-        "b4ed299d-5574-4bc0-bca9-1bca2df49244",
         "buttons"
       ],
       "settings": {

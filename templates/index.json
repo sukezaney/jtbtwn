@@ -128,7 +128,7 @@
       "settings": {
         "heading": "ブログ一覧",
         "heading_size": "h1",
-        "blog": "news",
+        "blog": "ブログ一覧",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",
